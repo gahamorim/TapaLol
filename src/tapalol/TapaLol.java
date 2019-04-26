@@ -1,5 +1,7 @@
 package tapalol;
 
+import java.awt.Color;
+
 /**
  *
  * @author Gabriel Amorim
