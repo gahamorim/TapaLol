@@ -6,20 +6,30 @@
 package tapalol;
 
 import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author Gabriel Amorim
  * @author Felipe Toshio
  */
+
 public class TelaJogo extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaJogo
      */
-    public TelaJogo() {
+    
+    public TelaJogo() { 
         getContentPane().setBackground(Color.DARK_GRAY);
         initComponents();
+        
+        //GridLayout gridChampions = new GridLayout(6,8);
+        //jPanelCampeoesContent.setLayout(gridChampions);
+        
     }
 
     /**
@@ -44,16 +54,55 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanelJogadores = new javax.swing.JPanel();
         jPanelJogador1 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jPanel25 = new javax.swing.JPanel();
+        jPanelIcone1 = new javax.swing.JPanel(){
+
+            public void paintComponent(Graphics g){
+                ImageIcon icone1 = new ImageIcon("src/tapalol/icones/iconejogador/Jogador1.png");
+                Image i1 = icone1.getImage();
+
+                g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);
+            }
+
+        };
         jPanelJogador2 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        jPanel30 = new javax.swing.JPanel();
+        jPanelIcone2 = new javax.swing.JPanel(){
+
+            public void paintComponent(Graphics g){
+                ImageIcon icone1 = new ImageIcon("src/tapalol/icones/iconejogador/Jogador2.png");
+                Image i1 = icone1.getImage();
+
+                g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);
+
+            }
+
+        };
         jPanelJogador3 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jPanelIcone3 = new javax.swing.JPanel(){
+
+            public void paintComponent(Graphics g){
+                ImageIcon icone1 = new ImageIcon("src/tapalol/icones/iconejogador/Jogador3.png");
+                Image i1 = icone1.getImage();
+
+                g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);
+
+            }
+
+        };
         jPanelJogador4 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jPanelIcone4 = new javax.swing.JPanel(){
+
+            public void paintComponent(Graphics g){
+                ImageIcon icone1 = new ImageIcon("src/tapalol/icones/iconejogador/Jogador4.png");
+                Image i1 = icone1.getImage();
+
+                g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);
+
+            }
+
+        };
         jPanelEscolhido = new javax.swing.JPanel();
         jPanelCampeaoEscolhido = new javax.swing.JPanel();
         jPanelPontuacao = new javax.swing.JPanel();
@@ -63,7 +112,6 @@ public class TelaJogo extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tapa LOL");
         setBackground(new java.awt.Color(0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(1050, 850));
 
         jPanelCampeoes.setBackground(new java.awt.Color(1, 42, 168));
         jPanelCampeoes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -78,7 +126,7 @@ public class TelaJogo extends javax.swing.JFrame {
         );
         jPanelCampeoesContentLayout.setVerticalGroup(
             jPanelCampeoesContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 537, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -196,19 +244,22 @@ public class TelaJogo extends javax.swing.JFrame {
 
         jPanelJogador1.setBackground(new java.awt.Color(149, 164, 209));
         jPanelJogador1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelJogador1.setPreferredSize(new java.awt.Dimension(203, 123));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel8.setText("Jogador 1");
 
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+        jPanelIcone1.setPreferredSize(new java.awt.Dimension(65, 52));
+
+        javax.swing.GroupLayout jPanelIcone1Layout = new javax.swing.GroupLayout(jPanelIcone1);
+        jPanelIcone1.setLayout(jPanelIcone1Layout);
+        jPanelIcone1Layout.setHorizontalGroup(
+            jPanelIcone1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanelIcone1Layout.setVerticalGroup(
+            jPanelIcone1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 67, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelJogador1Layout = new javax.swing.GroupLayout(jPanelJogador1);
@@ -217,36 +268,41 @@ public class TelaJogo extends javax.swing.JFrame {
             jPanelJogador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelIcone1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel8)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanelJogador1Layout.setVerticalGroup(
             jPanelJogador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelJogador1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(jPanelJogador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
+                .addGroup(jPanelJogador1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelIcone1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador1Layout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jPanelJogador2.setBackground(new java.awt.Color(149, 164, 209));
         jPanelJogador2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelJogador2.setPreferredSize(new java.awt.Dimension(203, 123));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel9.setText("Jogador 2");
 
-        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
-        jPanel30.setLayout(jPanel30Layout);
-        jPanel30Layout.setHorizontalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+        jPanelIcone2.setPreferredSize(new java.awt.Dimension(65, 52));
+
+        javax.swing.GroupLayout jPanelIcone2Layout = new javax.swing.GroupLayout(jPanelIcone2);
+        jPanelIcone2.setLayout(jPanelIcone2Layout);
+        jPanelIcone2Layout.setHorizontalGroup(
+            jPanelIcone2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
-        jPanel30Layout.setVerticalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 48, Short.MAX_VALUE)
+        jPanelIcone2Layout.setVerticalGroup(
+            jPanelIcone2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 67, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelJogador2Layout = new javax.swing.GroupLayout(jPanelJogador2);
@@ -255,7 +311,7 @@ public class TelaJogo extends javax.swing.JFrame {
             jPanelJogador2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelIcone2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -265,8 +321,11 @@ public class TelaJogo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador2Layout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
                 .addGroup(jPanelJogador2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanelIcone2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)))
                 .addGap(27, 27, 27))
         );
 
@@ -276,15 +335,17 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel15.setText("Jogador 3");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+        jPanelIcone3.setPreferredSize(new java.awt.Dimension(65, 52));
+
+        javax.swing.GroupLayout jPanelIcone3Layout = new javax.swing.GroupLayout(jPanelIcone3);
+        jPanelIcone3.setLayout(jPanelIcone3Layout);
+        jPanelIcone3Layout.setHorizontalGroup(
+            jPanelIcone3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 48, Short.MAX_VALUE)
+        jPanelIcone3Layout.setVerticalGroup(
+            jPanelIcone3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 67, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelJogador3Layout = new javax.swing.GroupLayout(jPanelJogador3);
@@ -293,7 +354,7 @@ public class TelaJogo extends javax.swing.JFrame {
             jPanelJogador3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelIcone3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel15)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -303,8 +364,11 @@ public class TelaJogo extends javax.swing.JFrame {
             .addGroup(jPanelJogador3Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(jPanelJogador3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanelIcone3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -314,15 +378,17 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel11.setText("Jogador 4");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+        jPanelIcone4.setPreferredSize(new java.awt.Dimension(65, 52));
+
+        javax.swing.GroupLayout jPanelIcone4Layout = new javax.swing.GroupLayout(jPanelIcone4);
+        jPanelIcone4.setLayout(jPanelIcone4Layout);
+        jPanelIcone4Layout.setHorizontalGroup(
+            jPanelIcone4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 48, Short.MAX_VALUE)
+        jPanelIcone4Layout.setVerticalGroup(
+            jPanelIcone4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 67, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelJogador4Layout = new javax.swing.GroupLayout(jPanelJogador4);
@@ -331,7 +397,7 @@ public class TelaJogo extends javax.swing.JFrame {
             jPanelJogador4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelIcone4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -339,10 +405,13 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanelJogador4Layout.setVerticalGroup(
             jPanelJogador4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador4Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(jPanelJogador4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanelIcone4, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogador4Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8)))
                 .addGap(29, 29, 29))
         );
 
@@ -352,17 +421,17 @@ public class TelaJogo extends javax.swing.JFrame {
             jPanelJogadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelJogadoresLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelJogadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanelJogador1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelJogador2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelJogadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelJogador1, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                    .addComponent(jPanelJogador2, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
                     .addComponent(jPanelJogador3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelJogador4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanelJogadoresLayout.setVerticalGroup(
             jPanelJogadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogadoresLayout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanelJogador1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanelJogador2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -370,7 +439,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 .addComponent(jPanelJogador3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanelJogador4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addGap(23, 23, 23))
         );
 
         jPanelEscolhido.setBackground(new java.awt.Color(149, 164, 209));
@@ -454,7 +523,7 @@ public class TelaJogo extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanelSaguao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                         .addComponent(jPanelPontuacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -465,7 +534,7 @@ public class TelaJogo extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addComponent(jPanelJogadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jPanelEscolhido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -492,7 +561,7 @@ public class TelaJogo extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addComponent(jPanelJogadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelSaguao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelPontuacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -539,11 +608,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -551,27 +616,14 @@ public class TelaJogo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel30;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JPanel jPanelCampeaoEscolhido;
     private javax.swing.JPanel jPanelCampeoes;
     private javax.swing.JPanel jPanelCampeoesContent;
     private javax.swing.JPanel jPanelEscolhido;
+    private javax.swing.JPanel jPanelIcone1;
+    private javax.swing.JPanel jPanelIcone2;
+    private javax.swing.JPanel jPanelIcone3;
+    private javax.swing.JPanel jPanelIcone4;
     private javax.swing.JPanel jPanelJogador1;
     private javax.swing.JPanel jPanelJogador2;
     private javax.swing.JPanel jPanelJogador3;
