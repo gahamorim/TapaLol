@@ -6,10 +6,12 @@
 package tapalol;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
@@ -27,9 +29,441 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().setBackground(Color.DARK_GRAY);
         initComponents();
         
-        //GridLayout gridChampions = new GridLayout(6,8);
-        //jPanelCampeoesContent.setLayout(gridChampions);
+        JPanel c1 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/AhriSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        };       
+        c1.setPreferredSize(new Dimension(80,80));
         
+        JPanel c2 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/AkaliSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        };    
+        
+        JPanel c3 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon iconeC1 = new ImageIcon("src/tapalol/icones/Aurelion_SolSquare.png");
+            Image ci1 = iconeC1.getImage();
+            g.drawImage(ci1, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        };    
+        
+        JPanel c4 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/BlitzcrankSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c5 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/CaitlynSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c6 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/CorkiSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c7 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/DianaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c8 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/DravenSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c9 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/EkkoSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+          
+        JPanel c10 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/EliseSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c11 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/EzrealSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c12 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/FioraSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c13 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/GangplankSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c14 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/GragasSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c15 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/GravesSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c16 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/HecarimSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c17 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/IvernSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c18 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/JannaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c19 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/Jarvan_IVSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+          
+        JPanel c20 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/JhinSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c21 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/JinxSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c22 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/Kai'SaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c23 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/KarthusSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c24 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/KatarinaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c25 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/KayleSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c26 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/KaynSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c27 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/KledSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c28 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/LeBlancSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c29 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/Lee_sinSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+          
+        JPanel c30 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/LissandraSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c31 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/LuluSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c32 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/LuxSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c33 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/MalphiteSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c34 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/MaokaiSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c35 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/Miss_FortuneSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c36 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/MordekaiserSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c37 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/MorganaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c38 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/NamiSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c39 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/NasusSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+          
+        JPanel c40 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/NeekoSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c41 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/NidaleeSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c42 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/NunuSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c43 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/OriannaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c44 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/PantheonSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c45 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/PykeSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; ;
+        
+        JPanel c46 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/RenektonSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c47 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/RengarSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        JPanel c48 = new JPanel(){
+            public void paintComponent(Graphics g){
+            ImageIcon icone = new ImageIcon("src/tapalol/icones/SonaSquare.png");
+            Image ci = icone.getImage();
+            g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
+            }                
+        }; 
+        
+        GridLayout gridChampions = new GridLayout(6,8,3,3);
+        jPanelCampeoesContent.setLayout(gridChampions);
+        jPanelCampeoesContent.add(c1);
+        jPanelCampeoesContent.add(c2);
+        jPanelCampeoesContent.add(c3);
+        jPanelCampeoesContent.add(c4);
+        jPanelCampeoesContent.add(c5);
+        jPanelCampeoesContent.add(c6);
+        jPanelCampeoesContent.add(c7);
+        jPanelCampeoesContent.add(c8);
+        jPanelCampeoesContent.add(c9);
+        jPanelCampeoesContent.add(c10);
+        jPanelCampeoesContent.add(c11);
+        jPanelCampeoesContent.add(c12);
+        jPanelCampeoesContent.add(c13);
+        jPanelCampeoesContent.add(c14);
+        jPanelCampeoesContent.add(c15);
+        jPanelCampeoesContent.add(c16);
+        jPanelCampeoesContent.add(c17);
+        jPanelCampeoesContent.add(c18);
+        jPanelCampeoesContent.add(c19);
+        jPanelCampeoesContent.add(c20);
+        jPanelCampeoesContent.add(c21);
+        jPanelCampeoesContent.add(c22);
+        jPanelCampeoesContent.add(c23);
+        jPanelCampeoesContent.add(c24);
+        jPanelCampeoesContent.add(c25);
+        jPanelCampeoesContent.add(c26);
+        jPanelCampeoesContent.add(c27);
+        jPanelCampeoesContent.add(c28);
+        jPanelCampeoesContent.add(c29);
+        jPanelCampeoesContent.add(c30);
+        jPanelCampeoesContent.add(c31);
+        jPanelCampeoesContent.add(c32);
+        jPanelCampeoesContent.add(c33);
+        jPanelCampeoesContent.add(c34);
+        jPanelCampeoesContent.add(c35);
+        jPanelCampeoesContent.add(c36);
+        jPanelCampeoesContent.add(c37);
+        jPanelCampeoesContent.add(c38);
+        jPanelCampeoesContent.add(c39);
+        jPanelCampeoesContent.add(c40);
+        jPanelCampeoesContent.add(c41);
+        jPanelCampeoesContent.add(c42);
+        jPanelCampeoesContent.add(c43);
+        jPanelCampeoesContent.add(c44);
+        jPanelCampeoesContent.add(c45);
+        jPanelCampeoesContent.add(c46);
+        jPanelCampeoesContent.add(c47);
+        jPanelCampeoesContent.add(c48);       
     }
 
     /**
@@ -446,33 +880,34 @@ public class TelaJogo extends javax.swing.JFrame {
         jPanelEscolhido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanelCampeaoEscolhido.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanelCampeaoEscolhido.setPreferredSize(new java.awt.Dimension(80, 80));
 
         javax.swing.GroupLayout jPanelCampeaoEscolhidoLayout = new javax.swing.GroupLayout(jPanelCampeaoEscolhido);
         jPanelCampeaoEscolhido.setLayout(jPanelCampeaoEscolhidoLayout);
         jPanelCampeaoEscolhidoLayout.setHorizontalGroup(
             jPanelCampeaoEscolhidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
         jPanelCampeaoEscolhidoLayout.setVerticalGroup(
             jPanelCampeaoEscolhidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 41, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanelEscolhidoLayout = new javax.swing.GroupLayout(jPanelEscolhido);
         jPanelEscolhido.setLayout(jPanelEscolhidoLayout);
         jPanelEscolhidoLayout.setHorizontalGroup(
             jPanelEscolhidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelEscolhidoLayout.createSequentialGroup()
-                .addGap(236, 236, 236)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEscolhidoLayout.createSequentialGroup()
+                .addContainerGap(242, Short.MAX_VALUE)
                 .addComponent(jPanelCampeaoEscolhido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(242, 242, 242))
         );
         jPanelEscolhidoLayout.setVerticalGroup(
             jPanelEscolhidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelEscolhidoLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEscolhidoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanelCampeaoEscolhido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanelPontuacao.setBackground(new java.awt.Color(1, 42, 168));
@@ -526,33 +961,33 @@ public class TelaJogo extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                         .addComponent(jPanelPontuacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jPanelJogadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelTempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanelTempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addComponent(jPanelJogadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanelEscolhido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPanelPontuacaoSolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12))
+                                .addComponent(jPanelEscolhido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jPanelPontuacaoSolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanelCampeoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanelEscolhido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanelTempo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanelPontuacaoSolo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanelEscolhido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addComponent(jPanelPontuacaoSolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jPanelTempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
