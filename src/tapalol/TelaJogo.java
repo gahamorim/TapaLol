@@ -10,6 +10,8 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -29,7 +31,7 @@ public class TelaJogo extends javax.swing.JFrame {
         getContentPane().setBackground(Color.DARK_GRAY);
         initComponents();
         
-        JPanel c1 = new JPanel(){
+        JPanel c1 = new JPanel(){          
             public void paintComponent(Graphics g){
             ImageIcon icone = new ImageIcon("src/tapalol/icones/AhriSquare.png");
             Image ci = icone.getImage();
@@ -37,6 +39,11 @@ public class TelaJogo extends javax.swing.JFrame {
             }            
         };       
         c1.setPreferredSize(new Dimension(80,80));
+        c1.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Ahri");
+            }
+        });
         
         JPanel c2 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -44,7 +51,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        };    
+        };
+        c2.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Akali");
+            }
+        });
         
         JPanel c3 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -52,7 +64,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci1 = iconeC1.getImage();
             g.drawImage(ci1, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        };    
+        };
+        c3.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Aurelion_Sol");
+            }
+        });
         
         JPanel c4 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -61,6 +78,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c4.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Blitzcrank");
+            }
+        });
         
         JPanel c5 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -68,7 +90,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; 
+        };
+        c5.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Caitlyn");
+            }
+        });
         
         JPanel c6 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -77,6 +104,12 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c6.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Corki");
+            }
+        });
+        
         
         JPanel c7 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -85,6 +118,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c7.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Diana");
+            }
+        });
         
         JPanel c8 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -92,7 +130,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; 
+        };
+        c8.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Draven");
+            }
+        });
         
         JPanel c9 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -101,6 +144,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c9.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Ekko");
+            }
+        });
           
         JPanel c10 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -108,7 +156,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; 
+        };
+        c10.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Elise");
+            }
+        });
         
         JPanel c11 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -116,7 +169,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; 
+        };
+        c11.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Ezreal");
+            }
+        });
         
         JPanel c12 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -124,7 +182,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; 
+        };
+        c12.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Fiora");
+            }
+        });
         
         JPanel c13 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -133,6 +196,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c13.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Gangplank");
+            }
+        });
         
         JPanel c14 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -141,6 +209,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c14.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Gragas");
+            }
+        });
         
         JPanel c15 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -149,6 +222,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c15.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Graves");
+            }
+        });
         
         JPanel c16 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -157,6 +235,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c16.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Hecarim");
+            }
+        });
         
         JPanel c17 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -165,6 +248,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c17.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Ivern");
+            }
+        });
         
         JPanel c18 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -173,6 +261,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c18.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Janna");
+            }
+        });
         
         JPanel c19 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -181,6 +274,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c19.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Jarvan_IV");
+            }
+        });
           
         JPanel c20 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -189,6 +287,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c20.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Jhin");
+            }
+        });
         
         JPanel c21 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -197,6 +300,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c21.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Jinx");
+            }
+        });
         
         JPanel c22 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -205,6 +313,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c22.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Kai'Sa");
+            }
+        });
         
         JPanel c23 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -213,6 +326,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c23.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Karthus");
+            }
+        });
         
         JPanel c24 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -221,6 +339,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c24.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Katarina");
+            }
+        });
         
         JPanel c25 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -229,6 +352,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c25.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Kayle");
+            }
+        });
         
         JPanel c26 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -237,6 +365,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c26.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Kayn");
+            }
+        });
         
         JPanel c27 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -245,6 +378,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c27.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Kled");
+            }
+        });
         
         JPanel c28 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -253,6 +391,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c28.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("LeBlanc");
+            }
+        });
         
         JPanel c29 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -261,6 +404,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c29.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Lee_sin");
+            }
+        });
           
         JPanel c30 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -269,6 +417,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c30.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Lissandra");
+            }
+        });
         
         JPanel c31 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -277,6 +430,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c31.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Lulu");
+            }
+        });
         
         JPanel c32 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -285,6 +443,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c32.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Lux");
+            }
+        });
         
         JPanel c33 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -293,6 +456,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c33.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Malphite");
+            }
+        });
         
         JPanel c34 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -301,6 +469,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c34.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Maokai");
+            }
+        });
         
         JPanel c35 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -309,6 +482,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c35.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Miss_Fortune");
+            }
+        });
         
         JPanel c36 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -317,6 +495,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c36.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Mordekaiser");
+            }
+        });
         
         JPanel c37 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -325,6 +508,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c37.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Morgana");
+            }
+        });
         
         JPanel c38 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -333,6 +521,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c38.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Nami");
+            }
+        });
         
         JPanel c39 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -341,6 +534,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c39.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Nasus");
+            }
+        });
           
         JPanel c40 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -349,6 +547,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c40.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Neeko");
+            }
+        });
         
         JPanel c41 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -357,6 +560,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c41.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Nidalee");
+            }
+        });
         
         JPanel c42 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -365,6 +573,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c42.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Nunu");
+            }
+        });
         
         JPanel c43 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -373,6 +586,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c43.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Orianna");
+            }
+        });
         
         JPanel c44 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -381,6 +599,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c44.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Pantheon");
+            }
+        });
         
         JPanel c45 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -388,7 +611,12 @@ public class TelaJogo extends javax.swing.JFrame {
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
-        }; ;
+        };
+        c45.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Pyke");
+            }
+        });
         
         JPanel c46 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -397,6 +625,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c46.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Renekton");
+            }
+        });
         
         JPanel c47 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -405,6 +638,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c47.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Rengar");
+            }
+        });
         
         JPanel c48 = new JPanel(){
             public void paintComponent(Graphics g){
@@ -413,6 +651,11 @@ public class TelaJogo extends javax.swing.JFrame {
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
             }                
         }; 
+        c48.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Sona");
+            }
+        });
         
         GridLayout gridChampions = new GridLayout(6,8,3,3);
         jPanelCampeoesContent.setLayout(gridChampions);
@@ -693,6 +936,11 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel8.setText("Jogador 1");
 
         jPanelIcone1.setPreferredSize(new java.awt.Dimension(65, 52));
+        jPanelIcone1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanelIcone1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelIcone1Layout = new javax.swing.GroupLayout(jPanelIcone1);
         jPanelIcone1.setLayout(jPanelIcone1Layout);
@@ -1015,6 +1263,10 @@ public class TelaJogo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jPanelIcone1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelIcone1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelIcone1MouseClicked
+   
     /**
      * @param args the command line arguments
      */
