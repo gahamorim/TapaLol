@@ -34,7 +34,7 @@ public class TelaJogo extends javax.swing.JFrame {
             ImageIcon icone = new ImageIcon("src/tapalol/icones/AhriSquare.png");
             Image ci = icone.getImage();
             g.drawImage(ci, 0, 0, this.getSize().width, this.getSize().height, this);
-            }                
+            }            
         };       
         c1.setPreferredSize(new Dimension(80,80));
         
@@ -538,7 +538,16 @@ public class TelaJogo extends javax.swing.JFrame {
 
         };
         jPanelEscolhido = new javax.swing.JPanel();
-        jPanelCampeaoEscolhido = new javax.swing.JPanel();
+        jPanelCampeaoEscolhido = new javax.swing.JPanel(){
+
+            public void paintComponent(Graphics g){
+                ImageIcon icone1 = new ImageIcon("src/tapalol/icones/LeBlancSquare.png");
+                Image i1 = icone1.getImage();
+
+                g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);
+            }
+
+        };
         jPanelPontuacao = new javax.swing.JPanel();
         jPanelPontuacaoContent = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();

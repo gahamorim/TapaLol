@@ -719,6 +719,9 @@
               <Dimension value="[80, 80]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;&#xa;    public void paintComponent(Graphics g){&#xa;        ImageIcon icone1 = new ImageIcon(&quot;src/tapalol/icones/LeBlancSquare.png&quot;);&#xa;        Image i1 = icone1.getImage();&#xa;&#xa;        g.drawImage(i1, 0, 0, this.getSize().width, this.getSize().height, this);&#xa;    }&#xa;&#xa;}"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
